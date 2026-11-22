@@ -49,18 +49,19 @@ geprüft und neu geschrieben ([Quellen](CREDITS.md)).
 
 ## Die zehn Skills
 
-| | Skill | Was er kann | Sag zum Beispiel |
-| :---: | --- | --- | --- |
-| <img src="assets/icons/lexware-grundlagen.svg" width="40"> | [**lexware-grundlagen**](skills/lexware-grundlagen/SKILL.md) | Anschluss über den offiziellen Lexware-MCP-Server oder die Public API, Schlüssel sicher ablegen, Fehler lesen, die sechs Regeln. Pflicht für alle anderen | „Verbinde Lexware“ · „Warum kommt 406?“ |
-| <img src="assets/icons/lexware-rechnungen.svg" width="40"> | [**lexware-rechnungen**](skills/lexware-rechnungen/SKILL.md) | Rechnung aus einem Satz, Gutschrift, Rechnung aus Angebot, Kleinunternehmer, § 13b, XRechnung, PDF | „Schreib Muster Bau 12 Stunden Bauleitung à 85 € in Rechnung“ |
-| <img src="assets/icons/lexware-angebote.svg" width="40"> | [**lexware-angebote**](skills/lexware-angebote/SKILL.md) | Angebot aus Satz, Artikelstamm oder Nachunternehmer-PDF mit Aufschlag oder Handling Fee, weiterführen zu Auftragsbestätigung und Rechnung | „Mach aus dem PDF ein Angebot, 15 % drauf“ |
-| <img src="assets/icons/lexware-kontakte.svg" width="40"> | [**lexware-kontakte**](skills/lexware-kontakte/SKILL.md) | Kunden und Lieferanten finden und anlegen ohne Dubletten, Rechnungsadressen prüfen, sauber ändern | „Gibt es Müller & Söhne schon?“ |
-| <img src="assets/icons/lexware-artikel.svg" width="40"> | [**lexware-artikel**](skills/lexware-artikel/SKILL.md) | Artikelstamm pflegen, Leistungsverzeichnisse und Preislisten importieren, mit Protokoll und Rückbau | „Importier das Leistungsverzeichnis“ |
-| <img src="assets/icons/lexware-belege.svg" width="40"> | [**lexware-belege**](skills/lexware-belege/SKILL.md) | Eingangsrechnungen und Quittungen zur Belegerkennung hochladen oder fertig buchen, Kategorie nach Namen, Dublettenprüfung | „Ab damit in Lexware“ |
-| <img src="assets/icons/lexware-offene-posten.svg" width="40"> | [**lexware-offene-posten**](skills/lexware-offene-posten/SKILL.md) | Offene und überfällige Rechnungen, Zahlstand, Mahnstufen, Mahnung als Entwurf, Liquiditätsvorschau | „Wer schuldet uns Geld?“ |
-| <img src="assets/icons/lexware-auswertungen.svg" width="40"> | [**lexware-auswertungen**](skills/lexware-auswertungen/SKILL.md) | Umsatz je Monat und Kunde, Vorjahresvergleich, Angebotsquote, CSV-Export, mit Zwischenspeicher | „Wie lief der Oktober?“ |
-| <img src="assets/icons/lexware-check.svg" width="40"> | [**lexware-check**](skills/lexware-check/SKILL.md) | Gesundheitscheck des Kontos als Ampel-Bericht: Adressen, Dubletten, Artikel, Entwürfe, Zahlungsabgleich | „Ist unser Lexware bereit für Automatisierung?“ |
-| <img src="assets/icons/lexware-automatisierung.svg" width="40"> | [**lexware-automatisierung**](skills/lexware-automatisierung/SKILL.md) | Webhooks mit Signaturprüfung, Abfrage als Rückfall, nichts doppelt anlegen, Testbetrieb, n8n | „Sag Bescheid, wenn eine Rechnung bezahlt ist“ |
+<table>
+  <tr><th align="left" width="210">Skill</th><th align="left">Was er kann</th><th align="left" width="230">Sag zum Beispiel</th></tr>
+  <tr><td><img src="assets/icons/lexware-grundlagen.svg" width="36" height="36" alt=""><br><a href="skills/lexware-grundlagen/SKILL.md"><b>Grundlagen</b></a><br><sub><code>lexware-grundlagen</code></sub></td><td>Anschluss über den offiziellen Lexware-MCP-Server oder die Public API, Schlüssel sicher ablegen, Fehler lesen, die sechs Regeln. Pflicht für alle anderen</td><td>„Verbinde Lexware“ · „Warum kommt 406?“</td></tr>
+  <tr><td><img src="assets/icons/lexware-rechnungen.svg" width="36" height="36" alt=""><br><a href="skills/lexware-rechnungen/SKILL.md"><b>Rechnungen</b></a><br><sub><code>lexware-rechnungen</code></sub></td><td>Rechnung aus einem Satz, Gutschrift, Rechnung aus Angebot, Kleinunternehmer, §&nbsp;13b, XRechnung, PDF</td><td>„Schreib Muster Bau 12 Stunden Bauleitung à 85 € in Rechnung“</td></tr>
+  <tr><td><img src="assets/icons/lexware-angebote.svg" width="36" height="36" alt=""><br><a href="skills/lexware-angebote/SKILL.md"><b>Angebote</b></a><br><sub><code>lexware-angebote</code></sub></td><td>Angebot aus Satz, Artikelstamm oder Nachunternehmer-PDF mit Aufschlag oder Handling Fee, weiterführen zu Auftragsbestätigung und Rechnung</td><td>„Mach aus dem PDF ein Angebot, 15&nbsp;% drauf“</td></tr>
+  <tr><td><img src="assets/icons/lexware-kontakte.svg" width="36" height="36" alt=""><br><a href="skills/lexware-kontakte/SKILL.md"><b>Kontakte</b></a><br><sub><code>lexware-kontakte</code></sub></td><td>Kunden und Lieferanten finden und anlegen ohne Dubletten, Rechnungsadressen prüfen, sauber ändern</td><td>„Gibt es Müller & Söhne schon?“</td></tr>
+  <tr><td><img src="assets/icons/lexware-artikel.svg" width="36" height="36" alt=""><br><a href="skills/lexware-artikel/SKILL.md"><b>Artikel</b></a><br><sub><code>lexware-artikel</code></sub></td><td>Artikelstamm pflegen, Leistungsverzeichnisse und Preislisten importieren, mit Protokoll und Rückbau</td><td>„Importier das Leistungsverzeichnis“</td></tr>
+  <tr><td><img src="assets/icons/lexware-belege.svg" width="36" height="36" alt=""><br><a href="skills/lexware-belege/SKILL.md"><b>Belege</b></a><br><sub><code>lexware-belege</code></sub></td><td>Eingangsrechnungen und Quittungen zur Belegerkennung hochladen oder fertig buchen, Kategorie nach Namen, Dublettenprüfung</td><td>„Ab damit in Lexware“</td></tr>
+  <tr><td><img src="assets/icons/lexware-offene-posten.svg" width="36" height="36" alt=""><br><a href="skills/lexware-offene-posten/SKILL.md"><b>Offene Posten</b></a><br><sub><code>lexware-offene-posten</code></sub></td><td>Offene und überfällige Rechnungen, Zahlstand, Mahnstufen, Mahnung als Entwurf, Liquiditätsvorschau</td><td>„Wer schuldet uns Geld?“</td></tr>
+  <tr><td><img src="assets/icons/lexware-auswertungen.svg" width="36" height="36" alt=""><br><a href="skills/lexware-auswertungen/SKILL.md"><b>Auswertungen</b></a><br><sub><code>lexware-auswertungen</code></sub></td><td>Umsatz je Monat und Kunde, Vorjahresvergleich, Angebotsquote, CSV-Export, mit Zwischenspeicher</td><td>„Wie lief der Oktober?“</td></tr>
+  <tr><td><img src="assets/icons/lexware-check.svg" width="36" height="36" alt=""><br><a href="skills/lexware-check/SKILL.md"><b>Check</b></a><br><sub><code>lexware-check</code></sub></td><td>Gesundheitscheck des Kontos als Ampel-Bericht: Adressen, Dubletten, Artikel, Entwürfe, Zahlungsabgleich</td><td>„Ist unser Lexware bereit für Automatisierung?“</td></tr>
+  <tr><td><img src="assets/icons/lexware-automatisierung.svg" width="36" height="36" alt=""><br><a href="skills/lexware-automatisierung/SKILL.md"><b>Automatisierung</b></a><br><sub><code>lexware-automatisierung</code></sub></td><td>Webhooks mit Signaturprüfung, Abfrage als Rückfall, nichts doppelt anlegen, Testbetrieb, n8n</td><td>„Sag Bescheid, wenn eine Rechnung bezahlt ist“</td></tr>
+</table>
 
 ## In zwei Minuten startklar
 
@@ -90,7 +91,8 @@ Desktop-Apps, Web und weitere Werkzeuge: [docs/installation.md](docs/installatio
   Schlüssel erzeugen, selbst ablegen (nie in den Chat), dann prüfen:
 
   ```
-  security add-generic-password -s lexware-api-key -a "$USER" -w     # macOS, fragt verdeckt
+  # macOS: Schlüssel verdeckt in den Schlüsselbund, dann Verbindung prüfen
+  security add-generic-password -s lexware-api-key -a "$USER" -w
   python3 skills/lexware-grundlagen/scripts/lexware.py pruefen
   ```
 
