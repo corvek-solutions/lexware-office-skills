@@ -1,0 +1,10 @@
+{
+  "name": "lexware-office",
+  "version": "1.0.0",
+  "description": "Agent Skills für Lexware Office von Corvek Solutions",
+  "author": { "name": "Corvek Solutions", "url": "https://corvek.de" },
+  "license": "MIT",
+  "keywords": ["lexware", "lexware-office", "lexoffice", "buchhaltung", "agent-skills"],
+  "repository": "https://github.com/corvek-solutions/lexware-office-skills",
+  "homepage": "https://github.com/corvek-solutions/lexware-office-skills"
+}

@@ -1,0 +1,18 @@
+{
+  "voucherDate": "2026-11-03T00:00:00.000+01:00",
+  "address": { "contactId": "00000000-0000-0000-0000-000000000000" },
+  "lineItems": [
+    { "type": "text", "name": "Objekt Hauptstraße 1, 60311 Frankfurt", "description": "Sanierung Treppenhaus" },
+    { "type": "custom", "name": "Bauleitung Oktober 2026", "description": "Koordination der Gewerke, Baustellentermine",
+      "quantity": 12, "unitName": "Std.",
+      "unitPrice": { "currency": "EUR", "netAmount": 85.00, "taxRatePercentage": 19 }, "discountPercentage": 0 }
+  ],
+  "totalPrice": { "currency": "EUR" },
+  "taxConditions": { "taxType": "net" },
+  "shippingConditions": { "shippingType": "serviceperiod",
+                          "shippingDate": "2026-10-01T00:00:00.000+02:00",
+                          "shippingEndDate": "2026-10-31T00:00:00.000+01:00" },
+  "title": "Rechnung",
+  "introduction": "Für unsere Leistungen im Oktober stellen wir Ihnen in Rechnung:",
+  "remark": "Vielen Dank für die gute Zusammenarbeit.\nVorgang 2026-117"
+}
