@@ -8,7 +8,7 @@
       "source": "./",
       "skills": [ "./skills/lexware-grundlagen", "./skills/lexware-rechnungen", "./skills/lexware-angebote", "./skills/lexware-kontakte", "./skills/lexware-artikel", "./skills/lexware-belege", "./skills/lexware-offene-posten", "./skills/lexware-auswertungen", "./skills/lexware-check", "./skills/lexware-automatisierung" ],
       "description": "Zehn Agent Skills für Lexware Office: Rechnungen, Angebote, Kontakte, Artikel, Belege, offene Posten, Auswertungen, Gesundheitscheck und Automatisierung. Entwurf zuerst, nie ungefragt festschreiben, Praxiswissen aus dem Produktivbetrieb.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": { "name": "Corvek Solutions", "url": "https://corvek.de" },
       "license": "MIT",
       "keywords": ["lexware", "lexware-office", "lexoffice", "buchhaltung", "rechnung", "angebot", "agent-skills"]

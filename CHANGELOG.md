@@ -1,5 +1,13 @@
 # Änderungen
 
+## 1.0.1 · 27.11.2026
+
+- `lexware-automatisierung`: Abschnitt 2 neu, „Sparsam abfragen“. Webhooks zuerst, Abfrage nur als Sicherheitsnetz
+  ein- bis zweimal am Tag, eine Anfrage für alle Arten, Einzelbelege nur bei neuer `updatedDate`, ein Abgleich je
+  Konto, Testumgebung nicht im Takt, Aufrufe mitzählen.
+- `lexware-auswertungen`: die neue `updatedDate` immer mitspeichern.
+- Drei neue Befunde (40 bis 42), alle im Betrieb geprüft.
+
 ## 1.0.0 · 22.11.2026
 
 - Zehn Skills: Grundlagen, Rechnungen, Angebote, Kontakte, Artikel, Belege, offene Posten, Auswertungen, Check,

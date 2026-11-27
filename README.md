@@ -114,7 +114,7 @@ Beides braucht Lexware Office mit Schnittstelle (Tarif XL).
 
 ## Aus der Praxis
 
-Fünf von [39 Befunden](skills/lexware-grundlagen/referenz/fallstricke.md), 26 davon im Betrieb selbst geprüft:
+Fünf von [42 Befunden](skills/lexware-grundlagen/referenz/fallstricke.md), 29 davon im Betrieb selbst geprüft:
 
 1. **429 und 406 sind verschiedene Welten.** 429 heißt warten. 406 heißt „deine Angaben sind falsch“ und wird nie
    wiederholt; das Feld steht in `details[]`.

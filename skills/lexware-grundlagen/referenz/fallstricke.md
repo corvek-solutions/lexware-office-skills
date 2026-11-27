@@ -108,3 +108,13 @@ schließen.
 39. ✅ Fehler aus Lexware an den Auslöser zurückgeben, in einem Satz mit Weg nach vorn. Eine Strecke, die bei 406
     still scheiterte, endete in einem Notfallanruf. Seitdem antwortet jeder Fehler dem Absender mit Grund und nächstem
     Schritt.
+40. ✅ Ein Abgleich, der die neue `updatedDate` nur speicherte, wenn sich auch die eigenen Felder änderten, holte
+    Angebote bei jedem Lauf neu: Lexware ändert die Zeit eines Angebots auch bei Dingen, die ein Dashboard nicht
+    speichert. Zusammen mit kompletten Listen alle 10 Minuten und einer Testumgebung im selben Takt entstand ein
+    Vielfaches der nötigen Aufrufe, obwohl sich nur wenige Belege am Tag änderten. Die Zeit immer speichern, nur
+    Geändertes abfragen, Test nicht im Takt (siehe `lexware-automatisierung`, Abschnitt 2).
+41. ✅ `voucherType` in der `voucherlist` nimmt mehrere Arten mit Komma, auch zusammen mit `purchaseinvoice` und
+    `updatedDateFrom`. Jeder Eintrag trägt seine Art in `voucherType`, die Felder sind dieselben wie in der Liste einer
+    einzelnen Art (Rechnungen mit `dueDate` und `openAmount`).
+42. ✅ Eine Zahlung ändert die `updatedDate` der Rechnung. Eine Abfrage nur nach Geändertem sieht bezahlte
+    Rechnungen also am selben Tag.

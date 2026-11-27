@@ -33,12 +33,24 @@ lexware.py loeschen /event-subscriptions/<id> --ja
 - Wird der API-Schlüssel ungültig, sind alle Abos weg (`token.revoked`). Nach einem Schlüsselwechsel neu einrichten.
 - Abos lassen sich nicht ändern, nur löschen und neu anlegen.
 
-## 2. Rückfall: regelmäßig abfragen
+## 2. Sparsam abfragen: Webhooks zuerst, Abfrage als Sicherheitsnetz
 
-Webhooks können ausfallen. Ein Abgleich alle 10 Minuten tagsüber hält den Stand trotzdem:
-`voucherlist` je Art mit `voucherStatus=any` und `updatedDateFrom=<letzter Stand minus ein Tag>` (nur Datum, ohne
-Uhrzeit). Belege, deren `updatedDate` sich geändert hat, einzeln nachlesen. Nachts einmal komplett, damit in
-Lexware gelöschte Belege auffallen.
+Lexware sieht die Zahl der Aufrufe je Konto, und alle Dienste mit demselben Schlüssel teilen sich die Grenze von
+2 Anfragen je Sekunde. Ein Takt, der immer wieder dasselbe fragt, kostet beides, ohne etwas Neues zu liefern.
+
+- **Webhooks zuerst.** Was sofort passieren soll, hängt an einem Ereignis (Abschnitt 1), nicht an einem Takt.
+- **Abfrage nur als Sicherheitsnetz,** ein- bis zweimal am Tag, falls ein Ereignis verloren ging: eine einzige
+  `voucherlist` für alle gebrauchten Arten (`voucherType=invoice,creditnote,quotation`), `voucherStatus=any`,
+  `updatedDateFrom=<letzter Erfolg minus ein Tag>` (nur Datum). Ohne Webhooks höchstens alle 10 bis 15 Minuten und
+  ebenso nur nach Geändertem fragen.
+- **Einzelbeleg nur bei neuer `updatedDate`,** und die Zeit bei jedem Lauf speichern, auch wenn sich an den eigenen
+  Feldern nichts geändert hat. Sonst gilt ein Beleg, an dem Lexware nur Felder ändert, die man nicht speichert, bei
+  jedem Lauf wieder als geändert und wird endlos neu geholt.
+- **Vollständige Listen höchstens einmal am Tag,** damit in Lexware gelöschte Belege auffallen, ohne dabei die
+  Einzelbelege neu zu laden.
+- **Ein Abgleich je Konto,** nicht je Dienst. Mehrere Dienste lesen aus einem gemeinsamen Zwischenspeicher, und eine
+  Testumgebung mit dem echten Schlüssel läuft nie im selben Takt mit.
+- **Mitzählen:** Aufrufe je Lauf ins eigene Protokoll schreiben. Dann fällt ein Ausreißer auf, bevor Lexware ihn meldet.
 
 ## 3. Nichts doppelt anlegen
 

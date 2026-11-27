@@ -20,7 +20,8 @@ Einzelbeleg. Daraus folgt der Ablauf:
 3. **Netto je Beleg** aus `lexware.py get /invoices/<id> --felder totalPrice.totalNetAmount`. Bei zwei Anfragen je
    Sekunde dauern 500 Rechnungen gut vier Minuten. Deshalb:
 4. **Zwischenspeicher:** Ergebnis als JSON-Datei ablegen (id, Datum, Kunde, netto, brutto, Status, `updatedDate`).
-   Beim nächsten Mal nur Belege nachladen, deren `updatedDate` sich geändert hat oder die neu sind, und Belege
+   Beim nächsten Mal nur Belege nachladen, deren `updatedDate` sich geändert hat oder die neu sind (die neue Zeit
+   immer mitspeichern, auch wenn die eigenen Felder gleich bleiben), und Belege
    entfernen, die in der Liste fehlen (in Lexware gelöscht). Für den Abgleich nur geänderter Belege nimmt
    `updatedDateFrom` ein Datum ohne Uhrzeit; einen Tag Überlappung einplanen.
 
